@@ -4,9 +4,6 @@ import Link from './Link'
 import Burger from './Burger'
 
 function Header ({burgerIsPressed, setBurgerIsPressed}) {
-
-   console.log(burgerIsPressed)
-
    return (
       <header>
          <ul className="nav">
