@@ -3,23 +3,33 @@ import Logo from './Logo.png'
 import Link from './Link'
 import Burger from './Burger'
 
-function Header () {
+function Header ({burgerIsPressed, setBurgerIsPressed}) {
+
+   console.log(burgerIsPressed)
+
    return (
       <header>
          <ul className="nav">
             <li className="nav-links">
                <ul className="sub-nav">
-                  <Link linkTitle="Wooden furniture"/>
-                  <Link linkTitle="About"/>
-                  <Link linkTitle="Stories"/>
+                  <Link class="nav-links" linkTitle="Wooden furniture"/>
+                  <Link class="nav-links" linkTitle="About"/>
+                  <Link class="nav-links" linkTitle="Stories"/>
                </ul>
             </li>
-            <Link linkTitle={null} imgSrc={Logo} />
+            <Link class="nav-links" linkTitle={null} imgSrc={Logo} />
          </ul>
 
          <ul className="nav-mobile">
             <Link linkTitle={null} imgSrc={Logo} />
-            <Burger />
+            <Burger burgerIsPressed={burgerIsPressed} setBurgerIsPressed={setBurgerIsPressed}/>
+            <div className={burgerIsPressed === false ? "nav-mobile__menu" : "nav-mobile__menu showed"}>
+               <ul className="sub-menu">
+                  <Link class="sub-menu__links" linkTitle="Wooden furniture" />
+                  <Link class="sub-menu__links" linkTitle="About"/>
+                  <Link class="sub-menu__links" linkTitle="Stories"/>
+               </ul>
+            </div>
          </ul>
       </header>
    )

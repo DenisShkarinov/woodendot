@@ -1,10 +1,7 @@
-import { useState } from "react"
-
-function Burger () {
-   const [burger, setBurger] = useState(false)
+function Burger ({ burgerIsPressed, setBurgerIsPressed }) {
    
    return (
-      <button className={burger === false ? "burger-button" : "burger-button active"} onClick={() => setBurger(!burger)}>
+      <button className={burgerIsPressed === false ? "burger-button" : "burger-button active"} onClick={() => setBurgerIsPressed(!burgerIsPressed)}>
          <span></span>
          <span></span>
          <span></span>

@@ -108,6 +108,34 @@ header {
                }
             }
          }
+
+         &__menu {
+            position: absolute;
+            top: 66px;
+            left: -110vw;
+            min-height: 100vh;
+            width: 100vw;
+            background-color: #E9E9E9;
+            transition: left ease-in-out .3s;
+
+            .sub-menu {
+
+               &__links {
+                  font-size: 25px;
+                  font-weight: 500;
+                  padding: 5px 20px;
+
+                  &:first-child {
+                     padding-top: 20px;
+                  }
+               }
+            }
+         }
+         
+         .showed {
+            left: -20px;
+            transition: left ease-in .3s;
+         }
       }
       .nav {
          visibility: hidden;
