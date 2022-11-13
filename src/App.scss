@@ -34,3 +34,17 @@ a {
 p {
   color: $grey;
 }
+
+h1,h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  font-family: "Cardo", serif;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}

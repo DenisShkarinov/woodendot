@@ -1,5 +1,5 @@
 import './Header.scss'
-import Logo from './Logo.png'
+import Logo from './Logo.webp'
 import Link from './Link'
 import Burger from './Burger'
 
