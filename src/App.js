@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 import Header from './components/header/Header'
 import Design from './components/design/design';
+import Description from './components/description/description';
+
 import './App.scss';
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <Header burgerIsPressed={ burgerIsPressed } setBurgerIsPressed={ setBurgerIsPressed }/>
       <main>  
         <Design  />
+        <Description  />
       </main>
     </div>
   );

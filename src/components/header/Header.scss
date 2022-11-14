@@ -2,13 +2,15 @@ header {
    padding: 16px 20px;
    position: relative;
 
-   .nav, .sub-nav {
+   .nav {
       display: flex;
-      
+      align-items: center;
+   }
+   .nav {
+
       .nav-links {
-         align-self: center;
+         display: inline-block;
          padding-right: 20px;
-         
 
          a {
             font-weight: 600;
@@ -19,9 +21,9 @@ header {
          }
 
          &:last-child {
-            flex-grow: 1;
             padding-right: 0;
             text-align: center;
+            flex-grow: 1;
          }
 
          &:hover > a {
@@ -116,6 +118,7 @@ header {
             width: 100vw;
             background-color: #E9E9E9;
             transition: left ease-in-out .3s;
+            z-index: 1;
 
             .sub-menu {
 

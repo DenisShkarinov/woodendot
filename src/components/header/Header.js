@@ -6,16 +6,16 @@ import Burger from './Burger'
 function Header ({burgerIsPressed, setBurgerIsPressed}) {
    return (
       <header>
-         <ul className="nav">
-            <li className="nav-links">
+         <nav className="nav">
+            <div className="nav-links">
                <ul className="sub-nav">
                   <Link class="nav-links" linkTitle="Wooden furniture"/>
                   <Link class="nav-links" linkTitle="About"/>
                   <Link class="nav-links" linkTitle="Stories"/>
                </ul>
-            </li>
+            </div>
             <Link class="nav-links" linkTitle={null} imgSrc={Logo} />
-         </ul>
+         </nav>
 
          <ul className="nav-mobile">
             <Link linkTitle={null} imgSrc={Logo} />

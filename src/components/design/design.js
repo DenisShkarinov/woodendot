@@ -9,6 +9,9 @@ function Design () {
          <div className="design-button">
             <button className="transparent">Discover now</button>
          </div>
+         <div className="absolute-block">
+            <a href='#'>Do you know what is your decor style?</a>
+         </div>
       </div>
    )
 }
