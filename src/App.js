@@ -5,6 +5,7 @@ import Design from './components/design/design';
 import Description from './components/description/description';
 import DecorStyles from './components/decorStyles/DecorStyles';
 import CollectionBlock from './components/collection/CollectionBlock';
+import Stories from './components/stories/stories';
 
 import './App.scss';
 
@@ -15,10 +16,11 @@ function App() {
     <div className="App">
       <Header burgerIsPressed={ burgerIsPressed } setBurgerIsPressed={ setBurgerIsPressed }/>
       <main>  
-        <Design  />
-        <Description  />
+        <Design />
+        <Description />
         <DecorStyles />
         <CollectionBlock />
+        <Stories />
       </main>
     </div>
   );
