@@ -1,14 +1,14 @@
 #decor {
    display: flex;
    flex-flow: wrap;
-   justify-content: center;
+   justify-content: space-around;
    padding-bottom: 1.2em;
 
    .img-block {
       position: relative;
       margin: 0.5em;
       flex-grow: 1;
-      max-width: 340px;
+      max-width: 300px;
       transition: .3s ease-in-out;
       cursor: pointer;
 
@@ -40,10 +40,10 @@
       }
 
       &:hover {
-         
+         transform: scale(1.05);
          .overlay {
             opacity: 1;
-            box-shadow: 0px 5px 3px 3px #474747;
+            box-shadow: -3px 5px 3px 3px rgba(47,47,47,.5);
          }
       }
    }

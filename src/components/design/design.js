@@ -2,7 +2,7 @@ import './design.scss'
 
 function Design () {
    return (
-      <div id="design">
+      <section id="design">
          <div className="design-title">
             <h1>Furniture designed to live in harmony, creating distinctive and timeless spaces</h1>
          </div>
@@ -12,7 +12,7 @@ function Design () {
          <div className="absolute-block">
             <a href='#'>Do you know what is your decor style?</a>
          </div>
-      </div>
+      </section>
    )
 }
 

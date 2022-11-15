@@ -8,12 +8,12 @@ import './decorStyles.scss'
 
 function DecorStyles () {
    return (
-      <div id="decor">
+      <section id="decor">
          <ImgBlock src={First} title="First Decor" />
          <ImgBlock src={Second} title="Second Decor" />
          <ImgBlock src={Third} title="Third Decor" />
          <ImgBlock src={Fourth} title="Fourth Decor" />
-      </div>
+      </section>
    )
 }
 
