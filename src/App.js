@@ -7,6 +7,8 @@ import DecorStyles from './components/decorStyles/DecorStyles';
 import CollectionBlock from './components/collection/CollectionBlock';
 import Stories from './components/stories/stories';
 import Reviews from './components/reviews/reviews';
+import Learn from './components/learn/learn';
+
 import data from './components/reviews/data';
 
 import './App.scss';
@@ -25,7 +27,7 @@ function App() {
         <CollectionBlock />
         <Stories />
         <Reviews reviews={reviews}/>
-        
+        <Learn  />
       </main>
     </div>
   );
