@@ -6,11 +6,14 @@ import Description from './components/description/description';
 import DecorStyles from './components/decorStyles/DecorStyles';
 import CollectionBlock from './components/collection/CollectionBlock';
 import Stories from './components/stories/stories';
+import Reviews from './components/reviews/reviews';
+import data from './components/reviews/data';
 
 import './App.scss';
 
 function App() {
   const [burgerIsPressed, setBurgerIsPressed] = useState(false)
+  const [reviews, setReviews] = useState(data)
 
   return (
     <div className="App">
@@ -21,6 +24,8 @@ function App() {
         <DecorStyles />
         <CollectionBlock />
         <Stories />
+        <Reviews reviews={reviews}/>
+        
       </main>
     </div>
   );
