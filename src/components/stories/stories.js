@@ -17,19 +17,23 @@ function Stories () {
          <Swiper 
          modules={[Pagination, A11y]}
             pagination={{clickable: true}}
-            loop={true}
             spaceBetween={10}
-            slidesPerView={3}
+            slidesPerView={1}
 
-            /*breakpoints={{
+            breakpoints={{
                640: {
                   slidesPerView: 2,
+                  spaceBetween: 20,
                },
-               790: {
-                  slidesPerView: 2.5,
+               768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
                },
-               
-            }}*/
+               1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+               },
+            }}
          >
             <SwiperSlide><img src={First} alt="First style" /></SwiperSlide>
             <SwiperSlide><img src={Second} alt="Second style" /></SwiperSlide>
