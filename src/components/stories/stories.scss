@@ -1,7 +1,49 @@
 #stories {
-   padding: 1em 0;
+   padding: 1em 3%;
 
    .stories-title {
       text-align: center;
+
+      h2 {
+         font-family: 'Cardo', serif;
+         font-size: 30px;
+         font-weight: 700;
+         line-height: 39px;
+         padding-bottom: 20px;
+      }
+      p {
+         font-family: 'Cardo', serif;
+         font-size: 18px;
+         line-height: 33px;
+      }
+   }
+
+   .swiper {
+      margin: 37px auto 82px; 
+      max-width: 1121px;
+
+      .swiper-wrapper {
+         padding-bottom: 1em;
+
+         .swiper-slide {
+            min-width: 280px;
+            max-width: 367px;
+
+            img {
+               width: 100%;
+            }
+         }
+      }
+      .swiper-pagination {
+         bottom: 0;
+
+         &-bullet {
+            border-radius: 0;
+            background-color: #000;
+         }
+         &-bullet-active {
+            transform: scale(1.3);
+         }
+      }
    }
 }
