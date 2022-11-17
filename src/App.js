@@ -8,6 +8,7 @@ import CollectionBlock from './components/collection/CollectionBlock';
 import Stories from './components/stories/stories';
 import Reviews from './components/reviews/reviews';
 import Learn from './components/learn/learn';
+import Footer from './components/footer/footer';
 
 import data from './components/reviews/data';
 
@@ -29,6 +30,7 @@ function App() {
         <Reviews reviews={reviews}/>
         <Learn  />
       </main>
+      <Footer  />
     </div>
   );
 }
