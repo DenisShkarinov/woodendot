@@ -2,7 +2,7 @@
 function ToShop (props) {
    return (
       <div className="description-link">
-         <button><a href="#">{props.toShop}</a></button>
+         <button id="shop" aria-label={props.toShop}><a href="#" aria-label="To shop">{props.toShop}</a></button>
       </div>
    )
 }

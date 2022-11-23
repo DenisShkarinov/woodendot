@@ -5,7 +5,7 @@ function ListOfLinks (props) {
          {
             props.footerLinks.map((link, key) => {
                return (
-               <li key={key}><a href="#">{link}</a></li>
+               <li key={key}><a href="#" aria-label={"Go to page " + link}>{link}</a></li>
             )}) 
          }
       </ul>

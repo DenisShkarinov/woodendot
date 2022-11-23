@@ -7,10 +7,10 @@ function Design () {
             <h1>Furniture designed to live in harmony, creating distinctive and timeless spaces</h1>
          </div>
          <div className="design-button">
-            <button className="transparent">Discover now</button>
+            <button id='discover' className="transparent" aria-label='Discover now'>Discover now</button>
          </div>
          <div className="absolute-block">
-            <a href='#'>Do you know what is your decor style?</a>
+            <a href='#' aria-label='Do you know what is your decor style?'>Do you know what is your decor style?</a>
          </div>
       </section>
    )

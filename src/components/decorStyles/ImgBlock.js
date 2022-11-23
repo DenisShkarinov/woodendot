@@ -4,7 +4,7 @@ function ImgBlock (props) {
       <div className="img-block">
          <img src={props.src} alt={props.title} />
          <div className="overlay">
-            <button>See More</button>
+            <button id="more" aria-label="See more">See More</button>
          </div>
       </div>
    )

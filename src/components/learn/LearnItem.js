@@ -10,7 +10,7 @@ function LearnItem (props) {
          <div className="item-description">
             <p>{props.description}</p>
          </div>
-         <a href="#">Learn more</a>
+         <a href="#" aria-label="Learn more">Learn more</a>
       </div>
    )
 }
